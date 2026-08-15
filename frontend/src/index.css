@@ -22,7 +22,6 @@ body {
   min-height: 100vh;
   padding: 20px;
   gap: 12px;
-  
 }
 
 .homepage h1 {
@@ -46,7 +45,7 @@ body {
   max-width: 500px;
 }
 
-.homepage a{
+.homepage button{
   display: inline-block;
   padding: 12px 28px;
   font-weight: 600;
