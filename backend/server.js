@@ -10,7 +10,7 @@ const apiRoutes = require("./routes/api");
 const app = express();
 
 app.use(cors({
-  origin: "https://splitit-48cq.onrender.com/"
+  origin: "https://splititbackend.onrender.com/api"
 }));
 
 app.use(express.json());
