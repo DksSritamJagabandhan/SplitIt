@@ -155,7 +155,7 @@ export default function Group() {
       <header className="topbar">
         <h1>
           <Link to="/dashboard">
-            CampusSplit
+            SplitIt
           </Link>
         </h1>
 
@@ -376,27 +376,16 @@ export default function Group() {
                       >
                         Pay
                       </button>
-
                     )}
-
                   </div>
-
                 ))
-
             )}
-
           </div>
-
         </section>
-
         {/* ADD EXPENSE */}
-
         <section className="card">
-
           <h3>Add expense</h3>
-
           <form onSubmit={addExpense}>
-
             <input
               value={expense.description}
               onChange={e =>
@@ -408,13 +397,7 @@ export default function Group() {
               placeholder="Expense description e.g. Dinner"
               required
             />
-
-            <input
-              type="number"
-              min="0.01"
-              step="0.01"
-              value={expense.amount}
-              onChange={e =>
+            <input type="number" min="0.01" step="0.01" value={expense.amount} onChange={e =>
                 setExpense({
                   ...expense,
                   amount: e.target.value
@@ -424,16 +407,13 @@ export default function Group() {
               required
             />
 
-            <select
-              value={expense.paidBy}
-              onChange={e =>
+            <select value={expense.paidBy} onChange={e =>
                 setExpense({
                   ...expense,
                   paidBy: e.target.value
                 })
               }
             >
-
               {data.members.map(member => (
                 <option
                   key={member.id}
@@ -442,21 +422,11 @@ export default function Group() {
                   {member.name} paid
                 </option>
               ))}
-
             </select>
-
             <h4>Split between:</h4>
-
             {data.members.map(member => (
-
-              <label
-                className="check"
-                key={member.id}
-              >
-
-                <input
-                  type="checkbox"
-                  checked={expense.splitUserIds.includes(
+              <label className="check" key={member.id}>
+                <input type="checkbox" checked={expense.splitUserIds.includes(
                     member.id
                   )}
                   onChange={() =>
@@ -467,21 +437,12 @@ export default function Group() {
                 {member.name}
 
               </label>
-
             ))}
-
             <br />
-
-            <button type="submit">
-              Add expense
-            </button>
-
+  <button type="submit">Add expense</button>
           </form>
-
         </section>
-
         {/* RECENT EXPENSES */}
-
         <section className="card">
 
           <h3>Recent expenses</h3>

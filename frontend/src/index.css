@@ -9,10 +9,18 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f5f7fb;
-  color: #1f2937;
+  background: #313131;
+  color: aliceblue;
 }
 
+body#home{
+  text-align: center;
+}
+
+div#root{
+  margin-top: 50pt;
+}
+body
 button,
 input,
 select {
@@ -32,13 +40,11 @@ a {
   text-decoration: none;
 }
 
-/* =========================
    GENERAL
-========================= */
 
 .page {
   min-height: 100vh;
-  background: #f5f7fb;
+  background: #f4f4f4;
 }
 
 .page main {
@@ -49,11 +55,12 @@ a {
 }
 
 .card {
-  background: white;
+  background: #212121;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 20px;
+  padding: 20px;
+  margin-bottom: 20pt;
+  margin: 0 justify;
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
 }
 
@@ -86,7 +93,7 @@ select {
 
 input:focus,
 select:focus {
-  border-color: #4f46e5;
+  border-color: #ffd900;
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
@@ -95,14 +102,15 @@ button {
   border: 0;
   border-radius: 9px;
   padding: 11px 18px;
-  background: #4f46e5;
-  color: white;
+  background: #ffae00;
+  color: rgb(0, 0, 0);
   font-weight: 600;
   transition: 0.2s;
 }
 
 button:hover {
   opacity: 0.92;
+  transform: scale(1.1);
 }
 
 hr {
@@ -134,11 +142,11 @@ hr {
 .topbar h1 {
   margin: 0;
   font-size: 24px;
-  color: #4f46e5;
+  color: #ffae00;
 }
 
 .topbar > a {
-  color: #4f46e5;
+  color: #ffae00;
   font-weight: 600;
 }
 
@@ -166,7 +174,7 @@ hr {
 
 .message {
   background: #eef2ff;
-  color: #3730a3;
+  color: #ffae00;
   padding: 13px 15px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -330,7 +338,7 @@ hr {
   justify-content: center;
 
   background: #e0e7ff;
-  color: #3730a3;
+  color: #ffae00;
   font-weight: 700;
 }
 
@@ -476,11 +484,11 @@ hr {
 
 .dashboard-page {
   min-height: 100vh;
-  background: #f5f7fb;
+  background: #212121;
 }
 
 .dashboard-header {
-  background: white;
+  background: #212121;
   border-bottom: 1px solid #e5e7eb;
   padding: 22px 6%;
 
@@ -493,12 +501,12 @@ hr {
 .dashboard-header h1 {
   margin: 0;
   font-size: 28px;
-  color: #4f46e5;
+  color: #ffae00;
 }
 
 .dashboard-header p {
   margin: 5px 0 0;
-  color: #6b7280;
+  color: aliceblue;
 }
 
 .header-user {
@@ -513,15 +521,15 @@ hr {
 }
 
 .header-user small {
-  color: #6b7280;
+  color: aliceblue;
   margin-top: 3px;
 }
 
 .logout-button {
   min-height: 40px;
   border: 1px solid #d1d5db;
-  background: white;
-  color: #374151;
+  background: #ffae00;
+  color: #212121;
 }
 
 .dashboard-container {
@@ -542,7 +550,7 @@ hr {
 
 .welcome-section p {
   margin: 0;
-  color: #6b7280;
+  color: #ffae00;
 }
 
 /* SUMMARY */
@@ -564,7 +572,7 @@ hr {
   align-items: center;
   gap: 18px;
 
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 2px 6px #ffae00;
 }
 
 .summary-icon {
@@ -573,7 +581,7 @@ hr {
 
 .summary-card p {
   margin: 0 0 5px;
-  color: #6b7280;
+  color: #212121;
 }
 
 .summary-card h3 {
@@ -596,7 +604,7 @@ hr {
 }
 
 .create-group-card p {
-  color: #6b7280;
+  color: aliceblue;
 }
 
 .create-group-form {
@@ -634,7 +642,7 @@ hr {
 
 .section-heading p {
   margin: 0;
-  color: #6b7280;
+  color: alice;
 }
 
 .group-count {
@@ -683,20 +691,20 @@ hr {
 }
 
 .group-card p {
-  color: #6b7280;
+  color: #212121;
   margin-top: 0;
 }
 
 .open-group-button {
   width: 100%;
   margin-top: 12px;
-  background: white;
-  color: #4f46e5;
+  background: #ffae00;
+  color: aliceblue;
   border: 1px solid #c7d2fe;
 }
 
 .open-group-button:hover {
-  background: #eef2ff;
+  transform: scale(1.1);
 }
 
 /* EMPTY */
@@ -718,7 +726,7 @@ hr {
 }
 
 .empty-groups p {
-  color: #6b7280;
+  color: #212121;
 }
 
 /* LOADING */
@@ -869,4 +877,15 @@ hr {
     padding: 18px;
   }
 
+}
+
+.auth-page{
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px;
+  justify-content: center;
+}
+
+.auth-page form{
+  padding-bottom: 50pt;
 }

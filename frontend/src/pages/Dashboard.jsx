@@ -113,7 +113,7 @@ export default function Dashboard() {
     return (
       <div className="dashboard-page">
         <div className="loading">
-          Loading CampusSplit...
+          Loading Splitit...
         </div>
       </div>
     );
@@ -125,7 +125,7 @@ export default function Dashboard() {
       {/* HEADER */}
       <header className="dashboard-header">
         <div>
-          <h1>CampusSplit</h1>
+          <h1>SplitIt</h1>
           <p>Split expenses. Track balances. Stay organized.</p>
         </div>
 

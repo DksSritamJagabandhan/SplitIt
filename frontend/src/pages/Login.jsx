@@ -23,10 +23,12 @@ export default function Login() {
   return (
     <div className="auth-page">
       <form className="card auth-card" onSubmit={submit}>
-        <h1>CampusSplit</h1>
+        <h1>SplitIt</h1>
         <h2>Login</h2>
         <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required />
+        <br></br><br></br>
         <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} required />
+        <br></br><br></br>
         <button>Login</button>
         <p>{message}</p>
         <span>New here? <Link to="/register">Create account</Link></span>

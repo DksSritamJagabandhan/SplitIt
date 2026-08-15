@@ -25,11 +25,14 @@ export default function Register() {
   return (
     <div className="auth-page">
       <form className="card auth-card" onSubmit={submit}>
-        <h1>CampusSplit</h1>
+        <h1>SplitIt</h1>
         <h2>Create account</h2>
         <input name="name" placeholder="Name" value={form.name} onChange={change} required />
+        <br></br><br></br>
         <input name="email" type="email" placeholder="Email" value={form.email} onChange={change} required />
+        <br></br><br></br>
         <input name="password" type="password" placeholder="Password" value={form.password} onChange={change} required />
+        <br></br><br></br>
         <button>Create account</button>
         <p>{message}</p>
         <span>Already registered? <Link to="/login">Login</Link></span>
