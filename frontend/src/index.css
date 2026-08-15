@@ -30,7 +30,7 @@ body {
   margin-bottom: 15px;
 }
 
-.homepage h1 span{
+.homepage h1 span {
   font-size: 50px;
   font-weight: 700;
   color: #ffae00;
@@ -443,7 +443,7 @@ hr {
 }
 
 strong {
-  color: #212121;
+  color: aliceblue;
   font-weight: bold;
 }
 
@@ -472,7 +472,7 @@ strong {
   width: 18px;
   height: 18px;
   min-height: auto;
-  accent-color: #4f46e5;
+  accent-color: #0c294a;
 }
 
 .card form button {
@@ -632,7 +632,7 @@ strong {
 .summary-card h3 {
   margin: 0;
   font-size: 24px;
-  color: #112f51f5;
+  color: #0c294a;
 }
 
 /* CREATE GROUP */
@@ -695,15 +695,15 @@ strong {
 
 .group-count {
   background: #ffae00;
-  padding: 8px 13px;
   border-radius: 50%;
-  white-space: nowrap;
+  align-items: center;
   color: #212121;
-  width: 40px;
-  height: 40px;
-  line-height: 30px;
-  font-weight: bold;
-
+  display: flex;
+  width: 42px;
+  justify-content: center;
+  height: 42px;
+  min-width: 42px;
+  font-weight: 700;
 }
 
 /* GROUP GRID */
@@ -785,10 +785,35 @@ strong {
 
 /* LOADING */
 
-.loading {
+/* .loading {
   text-align: center;
   padding: 100px;
   font-size: 20px;
+} */
+
+.loading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.loader{
+  width: 45px;
+  height: 45px;
+  border: 5px dotted currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }
 
 /* =========================
@@ -940,13 +965,14 @@ strong {
   text-align: center;
 }
 
-.auth-page form h1{
+.auth-page form h1 {
   color: #ffae00;
 }
+
 .auth-page form {
   padding-bottom: 50pt;
 }
 
-.auth-page button{
+.auth-page button {
   font-weight: 600;
 }

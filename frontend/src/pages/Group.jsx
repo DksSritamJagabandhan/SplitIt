@@ -128,7 +128,10 @@ export default function Group() {
   if (!data) {
     return (
       <div className="page">
-        <p>{message || "Loading..."}</p>
+        <div className="loading">
+          <div className="loader"></div>
+          <p>{message || "Loading..."}</p>
+        </div>
       </div>
     );
   }
@@ -398,21 +401,21 @@ export default function Group() {
               required
             />
             <input type="number" min="0.01" step="0.01" value={expense.amount} onChange={e =>
-                setExpense({
-                  ...expense,
-                  amount: e.target.value
-                })
-              }
+              setExpense({
+                ...expense,
+                amount: e.target.value
+              })
+            }
               placeholder="Amount"
               required
             />
 
             <select value={expense.paidBy} onChange={e =>
-                setExpense({
-                  ...expense,
-                  paidBy: e.target.value
-                })
-              }
+              setExpense({
+                ...expense,
+                paidBy: e.target.value
+              })
+            }
             >
               {data.members.map(member => (
                 <option
@@ -427,8 +430,8 @@ export default function Group() {
             {data.members.map(member => (
               <label className="check" key={member.id}>
                 <input type="checkbox" checked={expense.splitUserIds.includes(
-                    member.id
-                  )}
+                  member.id
+                )}
                   onChange={() =>
                     toggleUser(member.id)
                   }
@@ -439,7 +442,7 @@ export default function Group() {
               </label>
             ))}
             <br />
-  <button type="submit">Add expense</button>
+            <button type="submit">Add expense</button>
           </form>
         </section>
         {/* RECENT EXPENSES */}

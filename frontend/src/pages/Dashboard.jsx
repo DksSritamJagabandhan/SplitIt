@@ -113,7 +113,8 @@ export default function Dashboard() {
     return (
       <div className="dashboard-page">
         <div className="loading">
-          Loading Splitit...
+          <div className="loader"></div>
+          <div>Loading...</div>
         </div>
       </div>
     );
