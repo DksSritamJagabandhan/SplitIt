@@ -126,7 +126,7 @@ export default function Dashboard() {
       <header className="dashboard-header">
         <div>
           <h1>SplitIt</h1>
-          <p>Split expenses. Track balances. Stay organized.</p>
+          <p>Split expenses. Track balances. Stay organized</p>
         </div>
 
         <div className="header-user">
@@ -157,7 +157,7 @@ export default function Dashboard() {
           </h2>
 
           <p>
-            Here's an overview of your shared expenses.
+            Here's an overview of your shared expenses
           </p>
         </section>
 
@@ -205,7 +205,7 @@ export default function Dashboard() {
 
             <p>
               Create a group for your friends, roommates,
-              trip or college project.
+              trip or college projects
             </p>
           </div>
 
@@ -252,8 +252,7 @@ export default function Dashboard() {
             </div>
 
             <span className="group-count">
-              {groups.length} group
-              {groups.length !== 1 ? "s" : ""}
+              {groups.length}
             </span>
           </div>
 

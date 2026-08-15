@@ -8,20 +8,53 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #313131;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #212121;
   color: aliceblue;
 }
 
-body#home{
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-div#root{
-  margin-top: 50pt;
+.homepage h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: aliceblue;
+  margin-bottom: 15px;
 }
-body
-button,
+
+.homepage h1 span{
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffae00;
+  margin-bottom: 15px;
+}
+
+.homepage p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #d1d5db;
+  max-width: 500px;
+}
+
+.homepage Link {
+  display: inline-block;
+  padding: 12px 28px;
+  font-weight: 600;
+}
+
+.home span {
+  color: #ffae00;
+}
+
+body button,
 input,
 select {
   font: inherit;
@@ -40,9 +73,7 @@ a {
   text-decoration: none;
 }
 
-   GENERAL
-
-.page {
+GENERAL .page {
   min-height: 100vh;
   background: #f4f4f4;
 }
@@ -126,7 +157,7 @@ hr {
 .topbar {
   min-height: 70px;
   padding: 15px 5%;
-  background: white;
+  background: #212121;
   border-bottom: 1px solid #e5e7eb;
 
   display: flex;
@@ -145,7 +176,7 @@ hr {
   color: #ffae00;
 }
 
-.topbar > a {
+.topbar>a {
   color: #ffae00;
   font-weight: 600;
 }
@@ -161,6 +192,7 @@ hr {
 .group-header h2 {
   margin: 0 0 6px;
   font-size: 30px;
+  color: aliceblue;
 }
 
 .group-header p {
@@ -173,12 +205,12 @@ hr {
 ========================= */
 
 .message {
-  background: #eef2ff;
-  color: #ffae00;
+  background: #ffae00;
+  color: #212121;
   padding: 13px 15px;
   border-radius: 10px;
   margin-bottom: 20px;
-  border: 1px solid #c7d2fe;
+  font-weight: bold;
 }
 
 /* =========================
@@ -220,13 +252,14 @@ hr {
 
 .balance-summary-card p {
   margin: 0 0 5px;
-  color: #6b7280;
+  color: #212121;
   font-size: 14px;
 }
 
 .balance-summary-card h3 {
   margin: 0;
   font-size: 25px;
+  color: #212121;
 }
 
 /* =========================
@@ -284,7 +317,7 @@ hr {
 }
 
 .settled {
-  color: #6b7280;
+  color: aliceblue;
 }
 
 /* ADD MEMBER */
@@ -301,6 +334,7 @@ hr {
 
 .row button {
   flex-shrink: 0;
+  font-weight: bold;
 }
 
 /* =========================
@@ -337,7 +371,7 @@ hr {
   align-items: center;
   justify-content: center;
 
-  background: #e0e7ff;
+  background: #0c294a;
   color: #ffae00;
   font-weight: 700;
 }
@@ -354,6 +388,7 @@ hr {
 
 .who-owes-info strong {
   font-size: 16px;
+  color: #212121;
 }
 
 .positive-text {
@@ -372,7 +407,8 @@ hr {
   margin-left: auto;
   min-height: 40px;
   padding: 8px 13px;
-  background: #4f46e5;
+  background: #15803d;
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -387,7 +423,7 @@ hr {
   border-radius: 12px;
 }
 
-.settled-message > span {
+.settled-message>span {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -406,6 +442,11 @@ hr {
   color: #6b7280;
 }
 
+strong {
+  color: #212121;
+  font-weight: bold;
+}
+
 /* =========================
    CHECKBOXES
 ========================= */
@@ -420,19 +461,22 @@ hr {
   border: 1px solid #e5e7eb;
   border-radius: 9px;
 
-  background: #fafafa;
   cursor: pointer;
 }
 
-.check:hover {
+/* .check:hover {
   background: #f3f4f6;
-}
+} */
 
 .check input {
   width: 18px;
   height: 18px;
   min-height: auto;
   accent-color: #4f46e5;
+}
+
+.card form button {
+  font-weight: bold;
 }
 
 /* =========================
@@ -473,7 +517,7 @@ hr {
   color: #6b7280;
 }
 
-.expense > strong {
+.expense>strong {
   white-space: nowrap;
   font-size: 17px;
 }
@@ -527,9 +571,9 @@ hr {
 
 .logout-button {
   min-height: 40px;
-  border: 1px solid #d1d5db;
   background: #ffae00;
   color: #212121;
+  font-weight: bold;
 }
 
 .dashboard-container {
@@ -582,18 +626,20 @@ hr {
 .summary-card p {
   margin: 0 0 5px;
   color: #212121;
+  font-weight: bold;
 }
 
 .summary-card h3 {
   margin: 0;
   font-size: 24px;
+  color: #112f51f5;
 }
 
 /* CREATE GROUP */
 
 .create-group-card {
   background: white;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #ffae00;
   border-radius: 14px;
   padding: 25px;
   margin-bottom: 35px;
@@ -601,10 +647,11 @@ hr {
 
 .create-group-card h2 {
   margin: 0 0 6px;
+  color: #212121;
 }
 
 .create-group-card p {
-  color: aliceblue;
+  color: #212121;
 }
 
 .create-group-form {
@@ -619,6 +666,7 @@ hr {
 
 .create-group-form button {
   flex-shrink: 0;
+  font-weight: bold;
 }
 
 .group-message {
@@ -642,15 +690,20 @@ hr {
 
 .section-heading p {
   margin: 0;
-  color: alice;
+  color: #ffae00;
 }
 
 .group-count {
-  background: white;
-  border: 1px solid #e5e7eb;
+  background: #ffae00;
   padding: 8px 13px;
-  border-radius: 20px;
+  border-radius: 50%;
   white-space: nowrap;
+  color: #212121;
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  font-weight: bold;
+
 }
 
 /* GROUP GRID */
@@ -663,7 +716,7 @@ hr {
 
 .group-card {
   background: white;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #ffae00;
   border-radius: 14px;
   padding: 22px;
 
@@ -677,7 +730,7 @@ hr {
 }
 
 .group-card-top span {
-  color: #6b7280;
+  color: #212121;
   font-size: 14px;
 }
 
@@ -688,6 +741,7 @@ hr {
 .group-card h3 {
   margin: 18px 0 5px;
   font-size: 21px;
+  color: #212121;
 }
 
 .group-card p {
@@ -699,8 +753,8 @@ hr {
   width: 100%;
   margin-top: 12px;
   background: #ffae00;
-  color: aliceblue;
-  border: 1px solid #c7d2fe;
+  color: #212121;
+  font-weight: bold;
 }
 
 .open-group-button:hover {
@@ -802,7 +856,7 @@ hr {
     font-size: 20px;
   }
 
-  .topbar > a {
+  .topbar>a {
     font-size: 14px;
   }
 
@@ -857,7 +911,7 @@ hr {
     align-items: flex-start;
   }
 
-  .expense > strong {
+  .expense>strong {
     font-size: 15px;
   }
 
@@ -879,13 +933,20 @@ hr {
 
 }
 
-.auth-page{
+.auth-page {
   width: 90%;
   margin: 0 auto;
   padding: 40px;
-  justify-content: center;
+  text-align: center;
 }
 
-.auth-page form{
+.auth-page form h1{
+  color: #ffae00;
+}
+.auth-page form {
   padding-bottom: 50pt;
+}
+
+.auth-page button{
+  font-weight: 600;
 }
