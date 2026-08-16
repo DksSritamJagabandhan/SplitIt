@@ -25,6 +25,7 @@ export default function Register() {
   return (
     <div className="auth-page">
       <form className="card auth-card" onSubmit={submit}>
+        <img src="/logo3.png" alt="Logo" className="logo" />
         <h1>SplitIt</h1>
         <h2>Create account</h2>
         <input name="name" placeholder="Name" value={form.name} onChange={change} required />

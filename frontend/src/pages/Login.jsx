@@ -23,6 +23,7 @@ export default function Login() {
   return (
     <div className="auth-page">
       <form className="card auth-card" onSubmit={submit}>
+        <img src="/logo3.png" alt="Logo" className="logo" />
         <h1>SplitIt</h1>
         <h2>Login</h2>
         <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required />
