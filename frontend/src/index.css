@@ -772,7 +772,7 @@ strong {
 
 .empty-groups {
   background: white;
-  border: 1px dashed #d1d5db;
+  border: 1px dashed #ffae00;
   border-radius: 14px;
   padding: 50px;
   text-align: center;
@@ -784,6 +784,7 @@ strong {
 
 .empty-groups h3 {
   margin-bottom: 5px;
+  color: #212121;
 }
 
 .empty-groups p {
